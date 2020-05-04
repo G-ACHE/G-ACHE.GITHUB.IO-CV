@@ -1,0 +1,350 @@
+/* Mise en forme globale */
+@font-face 
+{
+    font-family: 'droid_sansregular';
+    src: url('DroidSans-webfont.eot');
+    src: url('DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('DroidSans-webfont.woff') format('woff'),
+         url('DroidSans-webfont.ttf') format('truetype'),
+         url('DroidSans-webfont.svg#droid_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body 
+{
+    margin: 0 auto;
+    padding: 0;
+    font-family: Helvetica;
+    max-width: 1400px;
+    border: 1px solid rgba(66,66,66 ,1);
+}
+
+h1, h2
+{
+    font-family: 'droid_sansregular', 'Arial', sans-serif;
+}
+
+main
+{
+    display: flex;
+    box-sizing: border-box;
+}
+/* Fin de la mise en forme globale */
+
+/* Mise en forme de l'en-tête */
+header
+{
+    display: flex;
+    align-items: center;
+}
+
+figure
+{
+    width: 30%;
+    text-align: center;
+    background-color: rgb(199,233,252);
+    margin: 0;
+}
+
+img
+{
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid rgba(66,66,66 ,1);
+    margin: auto;
+    margin-top: 7px;
+}
+
+#title h1, #title h2
+{
+    margin: 0 30px;
+}
+
+.prénom
+{
+    color: rgb(199,233,252);
+}
+
+#title h2
+{
+    text-transform: capitalize;
+}
+
+#title .underline 
+{
+    border-bottom: 1px solid rgb(199,233,252);
+}
+/* Fin de la mise en forme de l'En-tëte */
+
+/* Mise en forme de la partie gauche */
+h2
+{
+    text-transform: uppercase;
+}
+
+aside
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    background-color: rgb(199,233,252);
+}
+
+#about 
+{
+    text-align: justify;
+}
+
+#about h2 
+{
+    text-align: center;
+    color: rgb(199,233,252);
+    background-color: rgba(66,66,66 ,1);
+    padding: 5px 0;
+}
+
+.container, .contact
+{
+    padding: 20px;
+}
+
+p 
+{
+    font-size: 75%;
+    margin: 8px 0;
+}
+
+#leisure h2 
+{
+    text-align: center;
+    color: rgb(199,233,252);
+    background-color: rgba(66,66,66 ,1);
+    padding: 5px 0;
+    margin: 0;
+}
+
+#leisure .container 
+{
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+#leisure i 
+{
+    color: rgba(66,66,66 ,1);
+    border: 5px solid rgba(66,66,66 ,1);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#leisure .fa-gamepad 
+{
+    padding: 10px 5px;
+}
+/* Fin de la mise en forme partie gauche */
+
+/* Mise en forme de la partie droite */
+
+.fa-circle
+{
+    font-size: xx-small;
+}
+
+.fa-dot-circle
+{
+    font-size: small;
+}
+
+.professional_information
+{
+    width: 70%;
+}
+
+#education
+{
+    align-items: center;
+    margin-top: 5%;
+}
+
+li
+{
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+}
+
+#date
+{
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+#date1
+{
+    margin-top: 0;
+    margin-left: 17px;
+}
+
+#établissement
+{
+    margin-top: 0;
+    margin-left: 100px;
+}
+
+#établissement2
+{
+    margin-top: 0;
+    margin-left: 64px;
+}
+
+#établissement3
+{
+    margin-top: 0;
+    margin-left: 50px;
+}
+
+#expérience
+{
+    margin-top: 5%;
+}
+
+.professional_information h2 
+{
+    border-bottom: 1px solid rgb(199,233,252);    
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.professional_information h2 i 
+{
+    margin-right: 25px;
+}
+
+.professional_information i 
+{
+    color: rgb(199,233,252);
+}
+
+article
+{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25%;
+}
+
+#recommendations
+{
+    margin-top: 5%;
+}
+
+#recommendations h2 
+{
+    color: rgba(33,33,33 ,1);
+    border-bottom: 1px solid rgb(199,233,252);    
+    padding: 10px;
+    margin: 0 20px;
+}
+
+#recommendations i 
+{
+    color: rgba(199,233,252);
+    margin-right: 25px;
+}
+/* Fin de la mise en forme partie droite */
+
+/* Mise en place du responsive pour écran de petite taille */
+@media all and (max-width: 790px)
+{
+
+body
+{
+    width : auto;
+}
+
+header
+{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+figure
+{
+    width: 100%;
+}
+
+img
+{
+    width: 65%;
+    border: none;
+}
+
+h1
+{
+    width: auto;
+    font-size: 2em;
+}
+
+main
+{
+    flex-direction: column;
+}
+
+aside
+{
+    width: auto;
+    margin-top: 10px;
+}
+
+#about
+{
+    text-align: center;
+}
+
+.container
+{
+    text-align: justify;
+}
+
+article
+{
+    flex-direction: column;
+}
+
+.professional_information
+{
+    width: 100%;
+}
+
+.professional_information h2 
+{
+    margin: 0 15px;
+    font-size: 134%;
+}
+
+.professional_information h2 i, #recommendations h2 i  
+{
+    margin-right: 15px;
+}
+
+li
+{
+    flex-direction: column;
+}
+
+#date, #date1
+{
+    margin-left: 25px;
+    margin-top: 0;
+    font-size: 95%;
+}
+
+#établissement, #établissement1, #établissement2, #établissement3
+{
+    margin-left: 25px;
+    margin-top: 0;
+    font-size: 95%;
+}
+/* Fin de la mise en place du responsive pour petit écran */
