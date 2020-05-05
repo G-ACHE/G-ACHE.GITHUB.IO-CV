@@ -176,31 +176,31 @@ li
     list-style-type: none;
 }
 
-#date
+.date
 {
     margin-top: 0;
     margin-left: 20px;
 }
 
-#date1
+.date1
 {
     margin-top: 0;
     margin-left: 17px;
 }
 
-#établissement
+.établissement
 {
     margin-top: 0;
     margin-left: 100px;
 }
 
-#établissement2
+.établissement2
 {
     margin-top: 0;
     margin-left: 64px;
 }
 
-#établissement3
+.établissement3
 {
     margin-top: 0;
     margin-left: 50px;
@@ -334,17 +334,18 @@ li
     flex-direction: column;
 }
 
-#date, #date1
+.date, .date1
 {
     margin-left: 25px;
     margin-top: 0;
     font-size: 95%;
 }
 
-#établissement, #établissement1, #établissement2, #établissement3
+.établissement, .établissement1, .établissement2, .établissement3
 {
     margin-left: 25px;
     margin-top: 0;
     font-size: 95%;
+}
 }
 /* Fin de la mise en place du responsive pour petit écran */
